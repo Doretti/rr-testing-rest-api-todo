@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
     def index 
-        render json: Project.join(:todos)
+        render json: Project.joins(:todos)
     end
 
     def create
